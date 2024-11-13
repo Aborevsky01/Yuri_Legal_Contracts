@@ -30,7 +30,7 @@ class Jura():
     def __init__(self, classifier_params=None, law_params=None, ner_params=None):
         self.classification = {
                                 'params'      : self.default_llm_params if classifier_params is None else classifier_params,
-                                'kw_map_path' : 'docs/km_classification.txt',
+                                'kw_map_path' : '../Yuri_Legal_Contracts/Knowledge Maps/km_classification.txt',
                                 'tokenizer'   : None,
                                 'model'       : None,
                                 'gen_config'  : None
@@ -39,9 +39,9 @@ class Jura():
         self.law = {
                                 'params'      : self.default_llm_params if law_params is None else law_params,
                                 'kw_map_path' : {
-                                        'dcp'     : 'docs/kw_maps_law/km_dcp.txt',
-                                        'uslugi'  : 'docs/kw_maps_law/km_uslugi.txt',
-                                        'zaym'    : 'docs/kw_maps_law/km_zaym.txt'
+                                        'dcp'     : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_law/km_dcp.txt',
+                                        'uslugi'  : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_law/km_uslugi.txt',
+                                        'zaym'    : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_law/km_zaym.txt'
                                 },
                                 'tokenizer'   : None,
                                 'model'       : None,
@@ -51,9 +51,9 @@ class Jura():
         self.ner = {
                                 'params'      : self.default_llm_params if ner_params is None else ner_params,
                                 'kw_map_path' : {
-                                        'dcp'     : 'docs/kw_maps_ner/km_dcp.txt',
-                                        'uslugi'  : 'docs/kw_maps_ner/km_uslugi.txt',
-                                        'zaym'    : 'docs/kw_maps_ner/km_zaym.txt'
+                                        'dcp'     : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_ner/km_dcp.txt',
+                                        'uslugi'  : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_ner/km_uslugi.txt',
+                                        'zaym'    : '../Yuri_Legal_Contracts/Knowledge Maps/kw_maps_ner/km_zaym.txt'
                                 },
                                 'tokenizer'   : None,
                                 'model'       : None,
