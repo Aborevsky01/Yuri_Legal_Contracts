@@ -13,5 +13,9 @@ git clone https://huggingface.co/datasets/Aborevsky01/Yuri_Legal_Contracts
 ```
 ## Web service deployment
 ```shell
-python -m streamlit run streamlit_app.py
+python3 -m streamlit run streamlit_app.py
+```
+it is possible to specify a custom port http://localhost:8502/:
+```shell
+python3 -m streamlit run streamlit_app.py --server.port 8502
 ```
