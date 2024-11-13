@@ -21,7 +21,7 @@ DEFAULT_SYSTEM_PROMPT = "answer only in json format"
 class Jura():
 
     default_llm_params = {
-        'pretrained_model_name_or_path' : "",
+        'pretrained_model_name_or_path' : "IlyaGusev/saiga_llama3_8b",
         'load_in_8bit' : True,
         'torch_dtype'  : torch.bfloat16,
         'device_map'   : "auto",
