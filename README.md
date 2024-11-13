@@ -12,3 +12,7 @@ Download all necessary libraries and dependencies:
 ```shell
 pip install -r requirements.txt
 ```
+## Web service deployment
+```shell
+python -m streamlit run streamlit_app.py
+```
