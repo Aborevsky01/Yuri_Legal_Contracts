@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import datetime
-from jura import Jura
+from src.jura import Jura
 
 jura = Jura()
 
