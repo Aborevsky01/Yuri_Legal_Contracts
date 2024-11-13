@@ -937,5 +937,3 @@ def json_to_doc(json_result, doc_class, path_to_file, model, tokenizer, gen_conf
     if gen_config is not None:
         gen_config.temperature = 0.02
     return asyncio.run(function_dict[doc_class](json_result, path_to_file, model, tokenizer, gen_config))
-                                   
-                                   
