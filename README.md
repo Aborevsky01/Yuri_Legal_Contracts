@@ -7,3 +7,8 @@
 ```shell
 git clone https://huggingface.co/datasets/Aborevsky01/Yuri_Legal_Contracts
 ```
+## Preparing the environment
+Download all necessary libraries and dependencies:
+```shell
+pip install -r requirements.txt
+```
